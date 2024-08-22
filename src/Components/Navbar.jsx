@@ -6,16 +6,17 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left-content">
-        <h1 className="title">
+       <a href="/" style={{textDecoration:"none",color:"white"}}> <h1 className="title">
           <span className="title-circle"></span>
           CinemaCortex
         </h1>
+        </a>
       </div>
       <div className="navbar-right-content">
         <Dropdown label={"Movies"} link1={"Popular"} link2={"NowPlaying"} link3={"Upcoming"} link4={"TopRated"} />
         <Dropdown label={"TVShows"} link1={"Popular"} link2={"AiringToday"} link3={"OnTV"} link4={"TopRated"} />
         <Dropdown label={"People"} link1={"PopularPeople"} />
-        <Dropdown label={"More"} link1={"Discussions"} link2={"LeaderBoard"} link3={"Support"} link4={"API"} />
+        <Dropdown label={"More"} link1={"AboutUs"} link2={"ContactUs"} link3={"PrivacyPolicy"} link4={"Terms&Conditions"} />
       </div>
     </div>
   );

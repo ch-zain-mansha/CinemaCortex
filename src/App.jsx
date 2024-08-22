@@ -1,38 +1,34 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./Components/Navbar";
 import Popular from "./Components/Movies/Popular";
-import NowPlaying from "./Components/Movies/NowPlaying";
-import Upcoming from "./Components/Movies/Upcoming";
-import TopRated from "./Components/Movies/TopRated";
-import AiringToday from "./Components/TVShows/AiringToday";
-import OnTV from "./Components/TVShows/OnTV";
 import PopularPeople from "./Components/People/PopularPeople";
-import Discussions from "./Components/More/Discussions";
-import LeaderBoard from "./Components/More/LeaderBoard";
-import Support from "./Components/More/Support";
-import API from "./Components/More/API";
-import TvPopular from "./Components/TVShows/Popular";
-import TvTop from "./Components/TVShows/TopRated";
+import AboutUs from "./Components/More/About";
+import ContactUs from "./Components/More/Contact";
+import Privacy from "./Components/More/Privacy";
+import Terms from "./Components/More/Terms";
+import MainPage from "./Components/MainPage";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/Movies/Popular" element={<Popular />} />
-        <Route path="/Movies/NowPlaying" element={<NowPlaying />} />
-        <Route path="/Movies/Upcoming" element={<Upcoming />} />
-        <Route path="/Movies/TopRated" element={<TopRated />} />
-        <Route path="/TVShows/Popular" element={<TvPopular />} />
-        <Route path="/TVShows/AiringToday" element={<AiringToday />} />
-        <Route path="/TVShows/OnTV" element={<OnTV />} />
-        <Route path="/TVShows/TopRated" element={<TvTop />} />
-        <Route path="/People/PopularPeople" element={<PopularPeople />} />
-        <Route path="/More/Discussions" element={<Discussions />} />
-        <Route path="/More/LeaderBoard" element={<LeaderBoard />} />
-        <Route path="/More/Support" element={<Support />} />
-        <Route path="/More/API" element={<API />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/Movies/Popular" element={<Popular title={"Popular"}/>} />
+        <Route path="/Movies/NowPlaying" element={<Popular title={"Now Playing"}/>} />
+        <Route path="/Movies/Upcoming" element={<Popular title={"Upcoming"}/>} />
+        <Route path="/Movies/TopRated" element={<Popular title={"Top Rated"}/>} />
+        <Route path="/TVShows/Popular" element={<Popular title={"Popular"}/>} />
+        <Route path="/TVShows/AiringToday" element={<Popular title={"Airing Today"}/>} />
+        <Route path="/TVShows/OnTV" element={<Popular title={"On TV"}/>} />
+        <Route path="/TVShows/TopRated" element={<Popular title={"Top Rated"}/>} />
+        <Route path="/People/PopularPeople" element={<PopularPeople title={"Popular People"}/>} />
+        <Route path="/More/AboutUs" element={<AboutUs title={"About Us"}/>} />
+        <Route path="/More/ContactUs" element={<ContactUs title={"Contact Us"}/>} />
+        <Route path="/More/PrivacyPolicy" element={<Privacy title={"Privacy Policy"}/>} />
+        <Route path="/More/Terms&Conditions" element={<Terms title={"Terms & Conditions"}/>} />
       </Routes>
     </Router>
   );

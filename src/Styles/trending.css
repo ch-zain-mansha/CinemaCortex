@@ -1,0 +1,42 @@
+.trending {
+  width: 82.5%;
+  height: auto;
+  overflow-x: scroll;
+  padding: 20px 0;
+  white-space: nowrap;
+  margin-left: 140px;
+  text-align: center;
+}
+
+
+.trendingContent {
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+}
+
+
+.trending h1 {
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.trending::-webkit-scrollbar {
+  height: 12px; 
+}
+
+.trending::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px; 
+  border: 3px solid transparent; 
+  background-clip: content-box; 
+}
+
+.trending::-webkit-scrollbar-track {
+  background: #333; 
+  border-radius: 10px;
+}
+
+.trending::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
