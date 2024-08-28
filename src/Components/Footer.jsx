@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-subtitle">Quick Links</h3>
           <ul className="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/More/AboutUs">About Us</a></li>
+            <li><a href="/More/ContactUs">Contact Us</a></li>
+            <li><a href="/More/PrivacyPolicy">Privacy Policy</a></li>
+            <li><a href="/Terms&Conditions">Terms & Conditions</a></li>
           </ul>
         </div>
 

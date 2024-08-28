@@ -1,6 +1,8 @@
 .movie-card {
   flex: 0 0 220px;
   display: inline-block;
+  width: 220px; /* Ensures fixed width */
+  height: 400px; /* Ensures fixed height */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -21,6 +23,7 @@
 
 .movie-card__content {
   padding: 16px;
+  height: 140px; /* Ensures content area stays fixed */
 }
 
 .movie-card__title {
@@ -28,6 +31,9 @@
   font-weight: bold;
   margin: 0;
   color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .movie-card__date {

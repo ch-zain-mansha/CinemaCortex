@@ -1,21 +1,16 @@
 import React from 'react';
-import Header from './Header';
 import Trending from './Trending';
-import Footer from './Footer';
-
 import "../Styles/mainPage.css";
 
 const MainPage = () => {
   return (
     <div className='mainPage'>
-      <Header />
-      <Trending title={"Trending"}/>
-      <Trending title={"What's Popular"}/>
-      <Trending title={"Free to Watch"}/>
-      <Trending title={"Latest Trailers"}/>
-      <Footer />
+      <Trending title="Trending" category="trending/movie/day" />
+      <Trending title="What's Popular" category="movie/popular" />
+      <Trending title="Free to Watch" category="movie/top_rated" />
+      <Trending title="Latest Trailers" category="movie/upcoming" />
     </div>
-  )
-}
+  );
+};
 
-export default MainPage
+export default MainPage;
